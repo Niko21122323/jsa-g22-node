@@ -66,19 +66,19 @@ function copyFile(sourcePath, destPath) {
   });
 }
 
-/* copyFile("./fs-function.txt", "./c2.txt")
+copyFile("./fs-function.txt", "./c2.txt")
   .then(() => {
     console.log("File copied successfully!");
   })
   .catch((err) => {
     console.error("Error copying file:", err);
-  }); */
+  });
 
-async () => {
+/* async () => {
   try {
     await copyFile("./fs-function.txt", "./c2.txt");
     console.log("file copie successfully");
   } catch (err) {
     console.log("error copying file", err);
   }
-};
+}; */

@@ -91,7 +91,7 @@ fileWrite("data1.txt", "hov file so zapis od promis")
     console.log(err);
   });
 
-// Najnova varijanta (gornoto poednostavno so asinc i await)
+// Najnova varijanta (gornoto poednostavno so async i await)
 (async () => {
   try {
     await fileWrite("data1.txt", "hov file so zapis od promis"); // se povikuvaat kolku sakas funkcii so imaat promisi

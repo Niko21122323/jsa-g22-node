@@ -1,0 +1,39 @@
+// Writing a fs function step by step
+
+// Step 1: Import the 'fs' module (this line of code will import the built-in 'fs' module which provides file system related functionality)
+
+const fs = require("fs");
+
+// Step 2: Define the function (Replace 'myFunction' with a discriptive name for your function. You can also define any necessary arguments and options)
+
+function myFunction(filePath, options) {
+  // fs function calls go here
+}
+
+// Step 3: Use the 'fs' module to perform file system operations (Replace 'readFile' with the appropriate method for the operation you want to perform. For example you could use 'fs.writeFile' to write to a file or 'fs.readdir' to read the contents of a directory)
+
+function myFunction(filePath, options) {
+  fs.readFile(filePath, options, function (err, data) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log(data);
+  });
+}
+
+// Step 4: Wrap the 'fs' function in a promise (Wrapping the 'fs' function in a promise can make it easier to work with the results of the operation. You can 'resolve' to return the results of the operation if it succeeds, or 'reject' to return an error if it fails.)
+
+function myFunction(filePath, options) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filePath, options, function (err, data) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    });
+  });
+}
+
+// The function take a file path and options as arguments, and returns a promise that resolves with the contents of the file if it is successfully read, or rejects with an error if it cannot be read.

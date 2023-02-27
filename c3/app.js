@@ -19,26 +19,26 @@ const studenti = [
 // forEach, map, reduce, sort, filter, find
 
 // forEach
-/* function imeNaStudenti(studenti) {
+function imeNaStudenti(studenti) {
   studenti.forEach((student) => console.log(student.ime));
 }
-imeNaStudenti(studenti); */
+imeNaStudenti(studenti);
 
 // map
-/* const name = studenti.map((s) => {
+const name = studenti.map((s) => {
   return s.ime;
 });
-console.log(name); */
+console.log(name);
 
 // reduce
-/* let ocenki = studenti.reduce((acc, s) => {
+let ocenki = studenti.reduce((acc, s) => {
   return acc + s.prosek;
 }, 0);
 console.log(ocenki);
-console.log(ocenki / studenti.length); */
+console.log(ocenki / studenti.length);
 
 // sort
-/* studenti.sort((a, b) => {
+studenti.sort((a, b) => {
   if (a.prosek < b.prosek) {
     return 1;
   }
@@ -54,25 +54,25 @@ studenti.sort((a, b) => {
   if (a.ime.toLowerCase() < b.ime.toLowerCase()) return -1;
   return0;
 });
-console.log(studenti); */
+console.log(studenti);
 
 // filter
-/* let studentiFilter = studenti.filter((s) => {
+let studentiFilter = studenti.filter((s) => {
   // return s.ime === "Pero";
   return s.ime.endsWith("o");
   //return s.prosek > 0;
 });
-console.log(studentiFilter); */
+console.log(studentiFilter);
 
 // find (vraka element od nizata od postaveniot uslov)
-/* let studentiFind = studenti.find((s) => {
+let studentiFind = studenti.find((s) => {
   return s.ime === "Pero";
 });
-console.log(studentiFind); */
+console.log(studentiFind);
 
 // Za doma
 // 1. Site studenti od Skopje cie ime zavrsuva na a imaat prosek nad 7, podredeni po ime (rastecki)
-// 2. Site studentio so prosek nad 9 i ne se od Skopje, podredeni po prosek (opagacki)
+// 2. Site studenti so prosek nad 9 i ne se od Skopje, podredeni po prosek (opagacki)
 // 3. Prvite 3 studenti koi imaat iminja od 5 karakteri, podredeni  po prosek
 // 4. Gradovi podredeni po grupna visina na prosek
 // 5. Vkupen prosek na studenti cie ime zavrsuva na a nasproti site ostanati

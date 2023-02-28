@@ -7,5 +7,5 @@
   { "ime": "Ivana", "prosek": 6.9, "grad": "Kumanovo" },
   { "ime": "Natasha", "prosek": 8.1, "grad": "Skopje" },
   { "ime": "Stanko", "prosek": 7.2, "grad": "Strumica" },
-  { "name": "Ana", "prosek": 9.5, "grad": "Ohrid" }
+  { "ime": "Anastasija", "prosek": 9.5, "grad": "Ohrid" }
 ]

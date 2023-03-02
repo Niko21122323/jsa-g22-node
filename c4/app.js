@@ -46,7 +46,8 @@
     console.log(students); // Pero да го нема во листата
 })();
 */
-import fs from "fs";
+
+/* import fs from "fs";
 const readline = require("readline");
 
 const students = [
@@ -86,3 +87,4 @@ const students = [
       console.log(err);
     });
 })();
+ */
